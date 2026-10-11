@@ -10,3 +10,5 @@ Website (Fuzzboi Forge) and shared rules file with Claude Opus 5.5 (`claude-opus
 - **Letters A–F are not on the notes.** The pages count them as 0–5, a stopgap Claude chose on 2026-10-09, until Astra adds them. Card: `findastra/fuzzboi-friend` handoffs/001.
 - The repo description starts with the website link, and the Website field is set to it.
 - Check after a change: serve the repo (`python -m http.server`) and try `456900`, `C0FFEE` and `A1361F` (two hats), Save PNG, and phone width.
+
+Desktop recipe export added by OpenAI Codex (GPT-6), 2026-10-11. Original art and shared decoding rules remain unchanged.
