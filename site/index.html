@@ -340,10 +340,13 @@ document.getElementById("keep").addEventListener("click", async ()=>{
   setStatus(`Kept ${n} layers. They’ll load automatically next time you open this page.`);
 });
 
-// Standalone copy (GitHub): pick up the cut-out layers shipped next to this page in layers/<key>.png
+// Astra's 32 cut-out layers live in the hub, findastra/astras-pet-os desktop-art/fuzzboi-friend/layers/<key>.png
+// (one art source, Flash Audit A58), so the Forge, Fuzzboi Friend and the desktop pet share one copy.
+// Offline, the hub folder next to this repo.
 async function loadBundled(){
   let n=0;
-  n = await Fuzzboi.loadLayers("layers/", layers);
+  try{ n = await Fuzzboi.loadLayers("https://raw.githubusercontent.com/findastra/astras-pet-os/main/desktop-art/fuzzboi-friend/layers/", layers, true); }catch(e){}
+  if (!n) try{ n = await Fuzzboi.loadLayers("../../astras-pet-os/desktop-art/fuzzboi-friend/layers/", layers); }catch(e){}
   if (n){ renderLayerList(); update(); }
   return n;
 }
@@ -351,12 +354,12 @@ async function boot(){
   const h = (location.hash||"").replace("#","").toUpperCase();
   setCode(/^[0-9A-F]{6}$/.test(h) ? h : "456900");
   renderLayerList();
-  // On the website the layers sit next to this page: load them straight away, no waiting.
+  // The layers come from the hub: load them straight away, no waiting.
   const bundled = loadBundled();
   for (let i=0;i<30 && !(window.claude && window.claude.use);i++) await new Promise(r=>setTimeout(r,100));
   if (!window.claude || !window.claude.use){
     const n = await bundled;
-    setStatus(n ? `Loaded ${n} layers from the layers folder.` : "Load your PNGs above. (Keeping layers on the page only works inside Claude.)");
+    setStatus(n ? `Loaded ${n} layers from the hub.` : "Load your PNGs above. (Keeping layers on the page only works inside Claude.)");
     return;
   }
   const [dl, as, d] = await Promise.all([claude.use("downloads"), claude.use("assets"), claude.use("db")]);

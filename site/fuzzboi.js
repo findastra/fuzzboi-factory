@@ -127,7 +127,7 @@ function loadImg(src, cors){
   return new Promise((res,rej)=>{ const im=new Image(); if (cors) im.crossOrigin="anonymous"; im.onload=()=>res(im); im.onerror=rej; im.src=src; });
 }
 // Loads every layer in <base>/<key>.png into the map. Returns how many loaded.
-// cors: true when the layers come from another site (Fuzzboi Friend reads them from GitHub Pages).
+// cors: true when the layers come from another site (they live in the hub, findastra/astras-pet-os).
 async function loadLayers(base, layers, cors){
   let n=0;
   await Promise.all(EXPECTED.map(async ([k])=>{ try{ layers.set(k, await loadImg(`${base}${k}.png`, cors)); n++; }catch(e){} }));
