@@ -31,7 +31,7 @@ python3 -m http.server 8000
 # open http://localhost:8000/#456900
 ```
 
-The page loads every layer in `site/layers/` automatically. A code in the address (`#456900`) opens that Fuzzboi.
+The page loads every layer from the hub automatically: Astra's 32 layers live in [findastra/astras-pet-os](https://github.com/findastra/astras-pet-os) `desktop-art/fuzzboi-friend/layers/` (one art source), shared with Fuzzboi Friend and the desktop pet. Offline it reads the hub folder next to this repo. A code in the address (`#456900`) opens that Fuzzboi.
 
 ## The code
 
@@ -72,4 +72,4 @@ Layer order, bottom to top: feet, body fill, body outline, glasses, eyes, blush,
 `3d/build_fuzzboi.py` builds the model with Blender's Python module (`pip install bpy`) and checks that the crown and taco don't intersect the body, nudging them out if they do. `python3 3d/build_fuzzboi.py render` also renders previews. Import `Fuzzboi_456800.unitypackage` into Unity via Assets → Import Package → Custom Package. The pink rim is an inverted hull, so it needs a back-face-culled shader (Unity Standard works; Poiyomi or lilToon look better in VRChat). It's about 170k triangles: fine as a world prop, too heavy for an avatar.
 
 ## Desktop original-body variants
-Run node desktop-recipes-20261011.cjs to export 858 valid combinations across original styles A, B and C using the shared Forge decoder and original layer stack. Astra's Pet Apps selects a random recipe at launch, composites the original layers transparently, and starts with a jagged Style B pet. Triple-click cycles B, C and A with a fresh random combination; double-click opens the app. The desktop renders original layers at its display resolution for quick changes. Desktop drawing uses a black outline. No generated replacement body or copied trait rules. Prepared by OpenAI Codex (GPT-6), 2026-10-11.
+Run node desktop-recipes-20261011.cjs (with astras-pet-os next to this repo) to write the 858 valid combinations into the hub across original styles A, B and C using the shared Forge decoder and original layer stack. Astra's Pet Apps selects a random recipe at launch, composites the original layers transparently, and starts with a jagged Style B pet. Triple-click cycles B, C and A with a fresh random combination; double-click opens the app. The desktop renders original layers at its display resolution for quick changes. Desktop drawing uses a black outline. No generated replacement body or copied trait rules. Prepared by OpenAI Codex (GPT-6), 2026-10-11.

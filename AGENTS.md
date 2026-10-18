@@ -12,3 +12,5 @@ Website (Fuzzboi Forge) and shared rules file with Claude Opus 5.5 (`claude-opus
 - Check after a change: serve the repo (`python -m http.server`) and try `456900`, `C0FFEE` and `A1361F` (two hats), Save PNG, and phone width.
 
 Desktop recipe export added by OpenAI Codex (GPT-6), 2026-10-11. Original art and shared decoding rules remain unchanged.
+
+The 32 cut-out layers moved to the hub (one art source, Flash Audit A58, Astra 2026-10-18): they live only in [findastra/astras-pet-os](https://github.com/findastra/astras-pet-os) `desktop-art/fuzzboi-friend/layers/`, with the desktop recipes. The Forge loads them from there; the Procreate export and banner stay here as the Fuzzbois art project. By Claude Opus 5.5 (`claude-opus-5-5`), 2026-10-18.
