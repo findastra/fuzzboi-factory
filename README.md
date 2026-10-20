@@ -1,4 +1,4 @@
-# Fuzzbois
+# Fuzzboi Factory
 
 ## 👉 Make your Fuzzboi: **[findastra.github.io/fuzzbois](https://findastra.github.io/fuzzbois/)**
 
