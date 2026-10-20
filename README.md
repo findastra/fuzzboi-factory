@@ -2,7 +2,7 @@
 
 ## 👉 Make your Fuzzboi: **[findastra.github.io/fuzzbois](https://findastra.github.io/fuzzbois/)**
 
-Type any six-digit hex code (like `C0FFEE`) and save that exact Fuzzboi as a PNG. Its pet app is [Fuzzboi Friend](https://findastra.github.io/fuzzboi-friend/) ([repo](https://github.com/findastra/fuzzboi-friend)).
+Type any six-digit hex code (like `C0FFEE`) and save that exact Fuzzboi as a PNG. Its pet app is Fuzzboi Friend (private repo).
 
 Fuzzy little characters built from a six-digit hash code. Every code picks a body style, a body color, up to three accessories and sometimes a rarity, and the same six digits become the background color. By Astra.
 
