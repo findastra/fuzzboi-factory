@@ -14,3 +14,8 @@ Website (Fuzzboi Forge) and shared rules file with Claude Opus 5.5 (`claude-opus
 Desktop recipe export added by OpenAI Codex (GPT-6), 2026-10-11. Original art and shared decoding rules remain unchanged.
 
 The 32 cut-out layers moved to the hub (one art source, Flash Audit A58, Astra 2026-10-18): they live only in [findastra/astras-pet-os](https://github.com/findastra/astras-pet-os) `desktop-art/fuzzboi-friend/layers/`, with the desktop recipes. The Forge loads them from there; the Procreate export and banner stay here as the Fuzzbois art project. By Claude Opus 5.5 (`claude-opus-5-5`), 2026-10-18.
+
+**Chat closed, 2026-10-20.** The first Fuzzbois chat (Claude Opus 5.5, `claude-opus-5-5`, started 2026-10-04: the Forge, the layer cut-outs, the 3D Fuzzboi, this repo) ended at Astra's request after merging PR #2. Nothing from it is left unmerged. Still open from that chat, for whoever picks it up:
+- **OpenSea account:** Astra asked for "what's wrong with it" to be explained and fixed. Never checked, because the profile needs her wallet signed in. Look at it with her signed in. Ask before listing, publishing or spending anything.
+- **Rarity rule:** the notes don't say how a rarity is picked when position 6 is 0. The banner's pink cloud Fuzzboi with hands rules out "any 1–4 elsewhere in the code".
+- **3D crown:** the de-clip check leaves it perched on a spike tip. Flatten the top spike if it should sit down. Keep the no-clipping check whatever changes.
