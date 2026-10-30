@@ -92,3 +92,8 @@ Run node desktop-recipes-20261011.cjs (with astras-pet-os next to this repo) to 
    OpenAI Codex (GPT-6), 2026-10-11.
 3. `legacy/2021/Ownable.sol` is an OpenZeppelin contract.
 4. The picture above is a screenshot of the live Forge, 2026-10-29.
+
+## License
+
+MIT for the code, see [LICENSE](LICENSE). The Fuzzbois, their layers and the art stay Astra's;
+`legacy/2021/Ownable.sol` keeps OpenZeppelin's MIT license.
